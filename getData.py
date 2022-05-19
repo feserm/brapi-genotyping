@@ -73,14 +73,14 @@ def buildURL():
         else:
             url += '&'
         first = False
-        url += 'positionRange=' + args.positionRange
+        url += 'positionRanges=' + args.positionRange
     if not args.germplasmDbId is None:
         if first:
             url += '?'
         else:
             url += '&'
         first = False
-        url += 'germplasmDbId=' + args.germplasmDbId
+        url += 'germplasmDbIds=' + args.germplasmDbId
     if not args.germplasmName is None:
         if first:
             url += '?'
